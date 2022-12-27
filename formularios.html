@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<h1>Controle de formulários </h1>
+<p>Exemplo do Livro</p>    
+<form action="http://www.example.com/subscribe.php"method="get">
+    <p>This is where the form controls will appear.
+     </p>
+</form>
+<p>Para criarmos uma box, inserimos o elemento <b>input</b> dentro do form, seus atributos variam, podendo ser</p>
+<table widht="300" border="2" bgcolor="#efefef" cellpadding="3" >
+    <th>Atributos</th>
+    <th>Significado</th>
+    <tr>
+        <td><b>type</b></td>
+        <td>text</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>username/login</td>
+    </tr>
+    <tr>
+        <td>size</td>
+        <td>recomendamos usar CSS, size ultrapassado</td>
+    </tr>
+    <tr>
+        <td>maxlenght</td>
+        <td>tamanho máximo de caracteres possiveis na box</td>
+    </tr>
+</table>
+<form action="http://www.example.com/subscribe.php" method="get">
+    <p>Nome Completo:<input type="text" username="name"/></p>
+    <p>CPF:<input type="text" username="cpf"/></p>
+    <p>Login:<input type="text" username="login"/></p>
+    <p>Senha:<input type="password" username="password" size="10" maxlength="10"/></p>
+</form>
+<h2>Textarea</h2>
+<form action="http://www.example.com/comments.php">
+    <p>Como tem sido sua experiência neste Site?</p>
+     <textarea name="comments" cols="100" rows="4"></textarea>
+    </form>
+<h2>Radio Button Form</h2>
+    <form action="http://www.example.com/profile.php">
+        <p>Selecione o método de pagamento:
+         <br />
+         <input type="radio" name="pagamento" value="cartaocredito" />Cartão de Crédito
+         <input type="radio" name="pagamento" value="boleto" />Boleto
+         <input type="radio" name="pagamento" value="pix" />Pix
+        </p>
+        </form>
+<h2>Check Box</h2>
+<form action="http://www.example.com/profile.php">
+    <p>Selecione seus jogos favoritos:</p>
+    <input type="checkbox" name="jogos" value="apex"/>Apex<br/>
+    <input type="checkbox" name="jogos" value="lol"/>League of Legends<br/>
+    <input type="checkbox" name="jogos" value="raft"/>Raft<br/>
+    <input type="checkbox" name="jogos" value="otp"/>Otpokemon
+</form>
+<h2> Drop down list</h2>
+<form action="http://www.example.com/profile.php">
+    <p>Qual arma você deseja usar?</p>
+    <select name="armas">
+     <option value="faca">Faca</option>
+     <option value="pistola">Pistola</option>
+     <option value=".50">.50</option>
+    </select>
+</form>
+<h2>Multiple Select Box</h2>
+<form action="http://www.example.com/profile.php">
+    <p>Do you play any of the following instruments?</p>
+    <select name="instruments" size="4" multiple="multiple">
+    <option value="guitar" selected="selected">Guitar</option>
+    <option value="drums">Drums</option>
+    <option value="keyboard" selected="selected">Keyboard</option>
+    <option value="bass">Bass</option>
+    </select>
+</form>
+<h2>File Input Box</h2>
+<form action="http://www.example.com/upload.php" method="post">
+<p>Upload your song in MP3 format:</p>
+<input type="file" name="user-song" /><br />
+<input type="submit" value="Upload" />
+</form>
+<h2>Submit Button</h2>
+<form action="http://www.example.com/subscribe.php">
+    <p>Subscribe to our email list:</p>
+    <input type="text" name="email" />
+    <input type="submit" name="subscribe"value="Inscrever-se" />
+</form>
+<h2>Image Button</h2>
+<form action="http://www.example.org/subscribe.php">
+    <p>Subscribe to our email list:</p>
+     <input type="text" name="email" />
+     <input type="image" src="Images/icons8-submit-64.png" width="50" height="50" />
+</form>
+<h2>Button & hidden Controls</h2>
+</html>
